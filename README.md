@@ -2,7 +2,7 @@
 
 **Русский** | [English](README_EN.md)
 
-Портативная графическая оболочка для [yt-dlp](https://github.com/yt-dlp/yt-dlp) под Windows. Вставил ссылку — выбрал качество, звуковую дорожку и контейнер — скачал. Без установки, без Python, без FFmpeg в `PATH`.
+Графическая оболочка для [yt-dlp](https://github.com/yt-dlp/yt-dlp) под Windows. Вставил ссылку — выбрал качество, звуковую дорожку и контейнер — скачал. Без установки, без Python, без FFmpeg в `PATH`.
 
 <p align="center">
   <img src="docs/yt-pump-main.jpg" width="780" alt="Главное окно YtPump: ссылка, качество, звуковая дорожка, папка сохранения и готовый файл">
