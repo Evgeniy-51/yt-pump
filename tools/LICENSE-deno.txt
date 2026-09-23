@@ -1,0 +1,2 @@
+Deno is MIT.
+https://github.com/denoland/deno/blob/main/LICENSE.md

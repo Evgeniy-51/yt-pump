@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppTitle" xml:space="preserve"><value>ytPump</value></data>
+  <data name="LanguageRu" xml:space="preserve"><value>RU</value></data>
+  <data name="LanguageEn" xml:space="preserve"><value>EN</value></data>
+  <data name="LanguageRussian" xml:space="preserve"><value>Русский</value></data>
+  <data name="LanguageEnglish" xml:space="preserve"><value>English</value></data>
+  <data name="Settings" xml:space="preserve"><value>Настройки</value></data>
+  <data name="Help" xml:space="preserve"><value>Помощь</value></data>
+  <data name="LanguageSection" xml:space="preserve"><value>Язык</value></data>
+  <data name="ProxySection" xml:space="preserve"><value>Настройки прокси</value></data>
+  <data name="Proxy" xml:space="preserve"><value>Прокси</value></data>
+  <data name="ProxyUse" xml:space="preserve"><value>Использовать прокси</value></data>
+  <data name="ProxySettings" xml:space="preserve"><value>Настройки прокси</value></data>
+  <data name="ProxySettingsStub" xml:space="preserve"><value>Настройки прокси появятся на следующем этапе.</value></data>
+  <data name="UrlLabel" xml:space="preserve"><value>Ссылка</value></data>
+  <data name="Paste" xml:space="preserve"><value>Вставить ссылку из буфера</value></data>
+  <data name="SaveToLabel" xml:space="preserve"><value>Сохранить в</value></data>
+  <data name="Browse" xml:space="preserve"><value>Выбрать папку</value></data>
+  <data name="QualityLabel" xml:space="preserve"><value>Качество</value></data>
+  <data name="AudioLabel" xml:space="preserve"><value>Аудио</value></data>
+  <data name="ContainerLabel" xml:space="preserve"><value>Контейнер</value></data>
+  <data name="QualityBest" xml:space="preserve"><value>Лучшее</value></data>
+  <data name="AudioPending" xml:space="preserve"><value>—</value></data>
+  <data name="ContainerMkv" xml:space="preserve"><value>Лучшее (MKV)</value></data>
+  <data name="ContainerMp4" xml:space="preserve"><value>Совместимый MP4</value></data>
+  <data name="ContainerAudio" xml:space="preserve"><value>Только аудио (M4A)</value></data>
+  <data name="Subtitles" xml:space="preserve"><value>Субтитры</value></data>
+  <data name="Download" xml:space="preserve"><value>Скачать</value></data>
+  <data name="FileNameLabel" xml:space="preserve"><value>Имя файла</value></data>
+  <data name="Cancel" xml:space="preserve"><value>Отменить</value></data>
+  <data name="Log" xml:space="preserve"><value>Журнал</value></data>
+  <data name="StatusToolsMissing" xml:space="preserve"><value>Неполный комплект tools</value></data>
+  <data name="ToolsMissingFormat" xml:space="preserve"><value>Не найдены: {0}. Положите exe в папку tools рядом с программой.</value></data>
+  <data name="LogAppDir" xml:space="preserve"><value>Каталог приложения: {0}</value></data>
+  <data name="LogToolsDir" xml:space="preserve"><value>Каталог tools: {0}</value></data>
+  <data name="LogMissing" xml:space="preserve"><value>Отсутствует: {0}</value></data>
+  <data name="LogAllTools" xml:space="preserve"><value>Все инструменты на месте.</value></data>
+  <data name="DownloadNotReady" xml:space="preserve"><value>Загрузка ещё не реализована.</value></data>
+  <data name="Close" xml:space="preserve"><value>Закрыть</value></data>
+  <data name="SettingsCorrupt" xml:space="preserve"><value>Файл настроек повреждён. Загружены значения по умолчанию, копия сохранена как settings.json.bak.</value></data>
+  <data name="SettingsPortableReadOnly" xml:space="preserve"><value>Портативный режим: нельзя записать папку data рядом с программой. Переместите приложение в доступное для записи место. Настройки не переносятся в AppData.</value></data>
+  <data name="SettingsIoError" xml:space="preserve"><value>Не удалось сохранить настройки.</value></data>
+  <data name="FolderEmpty" xml:space="preserve"><value>Выберите папку сохранения.</value></data>
+  <data name="FolderUnavailable" xml:space="preserve"><value>Последняя папка недоступна. Выберите новое место сохранения.</value></data>
+  <data name="FolderNotADirectory" xml:space="preserve"><value>Указан файл вместо папки. Выберите каталог.</value></data>
+  <data name="FolderNotWritable" xml:space="preserve"><value>Нет прав на запись в выбранную папку.</value></data>
+  <data name="LogPortableMode" xml:space="preserve"><value>Режим: portable</value></data>
+  <data name="LogAppDataMode" xml:space="preserve"><value>Режим: настройки в AppData</value></data>
+  <data name="LogSettingsPath" xml:space="preserve"><value>Файл настроек: {0}</value></data>
+  <data name="StatusProbing" xml:space="preserve"><value>Получение информации…</value></data>
+  <data name="StatusProbed" xml:space="preserve"><value>{0}</value></data>
+  <data name="UrlInvalid" xml:space="preserve"><value>Некорректный URL.</value></data>
+  <data name="AudioOriginal" xml:space="preserve"><value>Оригинал · {0}</value></data>
+  <data name="AudioDub" xml:space="preserve"><value>Дубляж · {0}</value></data>
+  <data name="ErrorNetwork" xml:space="preserve"><value>Не удалось подключиться к сайту. Проверьте интернет, прокси и DNS</value></data>
+  <data name="ErrorProxy" xml:space="preserve"><value>Не удалось установить соединение через прокси</value></data>
+  <data name="ErrorUnavailable" xml:space="preserve"><value>Видео недоступно, удалено или ограничено</value></data>
+  <data name="ErrorAuth" xml:space="preserve"><value>YouTube с этого соединения считает программу роботом. Нужна сессия обычного браузера — не пароль в YtPump, а cookies уже открытого сайта.&#x0a;&#x0a;1. Откройте этот же ролик в Firefox или Edge как обычный сайт и обновите страницу.&#x0a;2. Вернитесь сюда и повторите (вставить ссылку / скачать).&#x0a;3. Браузер можно не закрывать. YtPump считывает только cookies YouTube и не получает логины, пароли или историю.&#x0a;&#x0a;Используйте Firefox или Edge. Современный Chrome шифрует cookies так, что сторонние программы обычно не могут их прочитать. Открытие ролика в Chrome, как правило, не поможет — даже если вы вошли в аккаунт Google.&#x0a;&#x0a;Это не обрыв сети и не прокси.</value></data>
+  <data name="ErrorCookiesMissing" xml:space="preserve"><value>Не найден Firefox или Edge.&#x0a;&#x0a;YouTube с этого соединения считает программу роботом. Нужна сессия обычного браузера.&#x0a;&#x0a;1. Установите Firefox или Edge и откройте там этот ролик как сайт.&#x0a;2. Обновите страницу и вернитесь сюда.&#x0a;&#x0a;Современный Chrome шифрует cookies так, что YtPump обычно не может их прочитать. Открытие ролика в Chrome не поможет, даже если вы вошли в аккаунт Google. Это не обрыв сети и не прокси.</value></data>
+  <data name="ErrorJsRuntime" xml:space="preserve"><value>Не найден Deno. Проверьте папку tools</value></data>
+  <data name="ErrorFfmpeg" xml:space="preserve"><value>Комплект FFmpeg отсутствует или не смог объединить потоки</value></data>
+  <data name="ErrorCancelled" xml:space="preserve"><value>Загрузка отменена</value></data>
+  <data name="ErrorUnknown" xml:space="preserve"><value>Ошибка. Откройте журнал</value></data>
+  <data name="StatusDownloadingStart" xml:space="preserve"><value>Загрузка…</value></data>
+  <data name="StatusDownloading" xml:space="preserve"><value>Загрузка — {0}% · {1} · ETA {2}</value></data>
+  <data name="StatusMerging" xml:space="preserve"><value>Объединение видео и аудио…</value></data>
+  <data name="StatusDone" xml:space="preserve"><value>Готово: {0}</value></data>
+  <data name="StatusDoneUnknownPath" xml:space="preserve"><value>Загрузка завершена. Путь к файлу не удалось определить — откройте папку сохранения.</value></data>
+  <data name="StatusPartFiles" xml:space="preserve"><value>Отменено. Временные .part файлы могли остаться в папке сохранения.</value></data>
+  <data name="OpenFolder" xml:space="preserve"><value>Открыть папку</value></data>
+  <data name="ProxyType" xml:space="preserve"><value>Тип</value></data>
+  <data name="ProxyHost" xml:space="preserve"><value>Хост</value></data>
+  <data name="ProxyPort" xml:space="preserve"><value>Порт</value></data>
+  <data name="ProxyUsername" xml:space="preserve"><value>Логин</value></data>
+  <data name="ProxyPassword" xml:space="preserve"><value>Пароль</value></data>
+  <data name="ProxyShowPassword" xml:space="preserve"><value>Показать пароль</value></data>
+  <data name="ProxyHidePassword" xml:space="preserve"><value>Скрыть пароль</value></data>
+  <data name="ProxyTest" xml:space="preserve"><value>Проверить</value></data>
+  <data name="ProxySave" xml:space="preserve"><value>Сохранить</value></data>
+  <data name="ProxyTesting" xml:space="preserve"><value>Проверка прокси…</value></data>
+  <data name="ProxyTestOk" xml:space="preserve"><value>Соединение с прокси установлено</value></data>
+  <data name="ProxyTestTcpFailed" xml:space="preserve"><value>Не удалось подключиться к прокси</value></data>
+  <data name="ProxyTestYtDlpFailed" xml:space="preserve"><value>Прокси отвечает, но yt-dlp не смог через него открыть тестовый ролик</value></data>
+  <data name="ProxyTestYtDlpMissing" xml:space="preserve"><value>TCP до прокси есть, но yt-dlp не найден в tools</value></data>
+  <data name="ProxyInvalid" xml:space="preserve"><value>Прокси включён, но параметры некорректны. Проверьте хост и порт.</value></data>
+  <data name="ProxyInvalidHost" xml:space="preserve"><value>Укажите хост прокси.</value></data>
+  <data name="ProxyInvalidPort" xml:space="preserve"><value>Порт прокси должен быть от 1 до 65535.</value></data>
+  <data name="ProxyProfile" xml:space="preserve"><value>Профиль</value></data>
+  <data name="ProxyName" xml:space="preserve"><value>Имя</value></data>
+  <data name="ProxyActive" xml:space="preserve"><value>Активный</value></data>
+  <data name="ProxyNew" xml:space="preserve"><value>+ Новый профиль</value></data>
+  <data name="ProxyDuplicate" xml:space="preserve"><value>Копировать</value></data>
+  <data name="ProxyDelete" xml:space="preserve"><value>Удалить</value></data>
+  <data name="ProxyDeleteConfirm" xml:space="preserve"><value>Удалить «{0}»?</value></data>
+  <data name="ProxyDraftTitle" xml:space="preserve"><value>Новый профиль</value></data>
+  <data name="ProxyCancel" xml:space="preserve"><value>Отмена</value></data>
+  <data name="ProxyListFull" xml:space="preserve"><value>Можно сохранить не больше 10 прокси.</value></data>
+  <data name="StatusCookies" xml:space="preserve"><value>Сессия браузера ({0})…</value></data>
+  <data name="LogCookiesBrowser" xml:space="preserve"><value>Сессия браузера: {0}</value></data>
+  <data name="LogCookiesFailed" xml:space="preserve"><value>Не удалось взять cookies из {0}</value></data>
+  <data name="CloseWhileDownloading" xml:space="preserve"><value>Идёт загрузка. Прервать и выйти?</value></data>
+</root>

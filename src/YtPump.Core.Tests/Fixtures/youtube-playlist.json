@@ -1,0 +1,17 @@
+{
+  "_type": "playlist",
+  "entries": [
+    null,
+    {
+      "id": "pl1",
+      "title": "From playlist",
+      "formats": [
+        { "format_id": "137", "vcodec": "avc1", "acodec": "none", "height": 1080 },
+        { "format_id": "251", "vcodec": "none", "acodec": "opus", "language": "de", "format_note": "original" }
+      ],
+      "subtitles": {
+        "de": [{ "ext": "vtt" }]
+      }
+    }
+  ]
+}

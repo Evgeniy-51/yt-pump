@@ -1,0 +1,2 @@
+yt-dlp is Unlicense / public domain.
+https://github.com/yt-dlp/yt-dlp/blob/master/LICENSE

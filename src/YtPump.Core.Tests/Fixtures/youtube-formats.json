@@ -1,0 +1,32 @@
+{
+  "id": "fixture01",
+  "title": "Fixture Video",
+  "formats": [
+    { "format_id": "313", "vcodec": "vp9", "acodec": "none", "height": 2160 },
+    { "format_id": "137", "vcodec": "avc1.640028", "acodec": "none", "height": 1080 },
+    { "format_id": "137", "vcodec": "avc1.640028", "acodec": "none", "height": 1080 },
+    { "format_id": "136", "vcodec": "avc1.4d401f", "acodec": "none", "height": 720 },
+    { "format_id": "18", "vcodec": "avc1.42001E", "acodec": "mp4a.40.2", "height": 360, "language": "en" },
+    {
+      "format_id": "251",
+      "vcodec": "none",
+      "acodec": "opus",
+      "language": "ru",
+      "audio_track": { "id": "ru", "display_name": "Russian original", "is_original": true }
+    },
+    {
+      "format_id": "250",
+      "vcodec": "none",
+      "acodec": "opus",
+      "language": "en",
+      "format_note": "dubbed",
+      "audio_track": { "id": "en", "display_name": "English", "is_original": false }
+    },
+    { "format_id": "dead", "vcodec": "none", "acodec": "none" }
+  ],
+  "subtitles": {},
+  "automatic_captions": {
+    "ru": [{ "ext": "vtt" }],
+    "en": [{ "ext": "vtt" }]
+  }
+}

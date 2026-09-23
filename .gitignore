@@ -1,0 +1,14 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+data/
+dist/
+publish/
+*.zip
+tools/*.exe
+tools/*.dll
+*.pdb

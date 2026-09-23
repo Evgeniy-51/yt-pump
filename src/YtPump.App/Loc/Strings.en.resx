@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppTitle" xml:space="preserve"><value>ytPump</value></data>
+  <data name="LanguageRu" xml:space="preserve"><value>RU</value></data>
+  <data name="LanguageEn" xml:space="preserve"><value>EN</value></data>
+  <data name="LanguageRussian" xml:space="preserve"><value>Русский</value></data>
+  <data name="LanguageEnglish" xml:space="preserve"><value>English</value></data>
+  <data name="Settings" xml:space="preserve"><value>Settings</value></data>
+  <data name="Help" xml:space="preserve"><value>Help</value></data>
+  <data name="LanguageSection" xml:space="preserve"><value>Language</value></data>
+  <data name="ProxySection" xml:space="preserve"><value>Proxy settings</value></data>
+  <data name="Proxy" xml:space="preserve"><value>Proxy</value></data>
+  <data name="ProxyUse" xml:space="preserve"><value>Use proxy</value></data>
+  <data name="ProxySettings" xml:space="preserve"><value>Proxy settings</value></data>
+  <data name="ProxySettingsStub" xml:space="preserve"><value>Proxy settings will arrive in a later step.</value></data>
+  <data name="UrlLabel" xml:space="preserve"><value>Link</value></data>
+  <data name="Paste" xml:space="preserve"><value>Paste link from clipboard</value></data>
+  <data name="SaveToLabel" xml:space="preserve"><value>Save to</value></data>
+  <data name="Browse" xml:space="preserve"><value>Choose folder</value></data>
+  <data name="QualityLabel" xml:space="preserve"><value>Quality</value></data>
+  <data name="AudioLabel" xml:space="preserve"><value>Audio</value></data>
+  <data name="ContainerLabel" xml:space="preserve"><value>Container</value></data>
+  <data name="QualityBest" xml:space="preserve"><value>Best</value></data>
+  <data name="AudioPending" xml:space="preserve"><value>—</value></data>
+  <data name="ContainerMkv" xml:space="preserve"><value>Best (MKV)</value></data>
+  <data name="ContainerMp4" xml:space="preserve"><value>Compatible MP4</value></data>
+  <data name="ContainerAudio" xml:space="preserve"><value>Audio only (M4A)</value></data>
+  <data name="Subtitles" xml:space="preserve"><value>Subtitles</value></data>
+  <data name="Download" xml:space="preserve"><value>Download</value></data>
+  <data name="FileNameLabel" xml:space="preserve"><value>File name</value></data>
+  <data name="Cancel" xml:space="preserve"><value>Cancel</value></data>
+  <data name="Log" xml:space="preserve"><value>Log</value></data>
+  <data name="StatusToolsMissing" xml:space="preserve"><value>Tools package is incomplete</value></data>
+  <data name="ToolsMissingFormat" xml:space="preserve"><value>Missing: {0}. Place the executables in the tools folder next to the app.</value></data>
+  <data name="LogAppDir" xml:space="preserve"><value>App directory: {0}</value></data>
+  <data name="LogToolsDir" xml:space="preserve"><value>Tools directory: {0}</value></data>
+  <data name="LogMissing" xml:space="preserve"><value>Missing: {0}</value></data>
+  <data name="LogAllTools" xml:space="preserve"><value>All tools are present.</value></data>
+  <data name="DownloadNotReady" xml:space="preserve"><value>Download is not implemented yet.</value></data>
+  <data name="Close" xml:space="preserve"><value>Close</value></data>
+  <data name="SettingsCorrupt" xml:space="preserve"><value>Settings file is damaged. Defaults loaded; a copy was saved as settings.json.bak.</value></data>
+  <data name="SettingsPortableReadOnly" xml:space="preserve"><value>Portable mode: cannot write the data folder next to the app. Move it to a writable location. Settings will not fall back to AppData.</value></data>
+  <data name="SettingsIoError" xml:space="preserve"><value>Could not save settings.</value></data>
+  <data name="FolderEmpty" xml:space="preserve"><value>Choose a save folder.</value></data>
+  <data name="FolderUnavailable" xml:space="preserve"><value>The last folder is unavailable. Choose a new save location.</value></data>
+  <data name="FolderNotADirectory" xml:space="preserve"><value>A file was selected instead of a folder. Choose a directory.</value></data>
+  <data name="FolderNotWritable" xml:space="preserve"><value>No write permission for the selected folder.</value></data>
+  <data name="LogPortableMode" xml:space="preserve"><value>Mode: portable</value></data>
+  <data name="LogAppDataMode" xml:space="preserve"><value>Mode: settings in AppData</value></data>
+  <data name="LogSettingsPath" xml:space="preserve"><value>Settings file: {0}</value></data>
+  <data name="StatusProbing" xml:space="preserve"><value>Fetching information…</value></data>
+  <data name="StatusProbed" xml:space="preserve"><value>{0}</value></data>
+  <data name="UrlInvalid" xml:space="preserve"><value>Invalid URL.</value></data>
+  <data name="AudioOriginal" xml:space="preserve"><value>Original · {0}</value></data>
+  <data name="AudioDub" xml:space="preserve"><value>Dub · {0}</value></data>
+  <data name="ErrorNetwork" xml:space="preserve"><value>Could not reach the site. Check internet, proxy, and DNS</value></data>
+  <data name="ErrorProxy" xml:space="preserve"><value>Could not connect through the proxy</value></data>
+  <data name="ErrorUnavailable" xml:space="preserve"><value>Video is unavailable, removed, or restricted</value></data>
+  <data name="ErrorAuth" xml:space="preserve"><value>YouTube treats this connection as a bot. The app needs a normal browser session — not a Google password here, but cookies from a site you already opened.&#x0a;&#x0a;1. Open this same video in Firefox or Edge as a normal website and refresh.&#x0a;2. Come back here and try again (paste the link / download).&#x0a;3. You can leave the browser open. YtPump reads only YouTube cookies and does not receive logins, passwords, or browsing history.&#x0a;&#x0a;Use Firefox or Edge. Current Chrome encrypts cookies so third-party programs usually cannot read them. Opening the video in Chrome usually does not help — even if you are signed in to a Google account.&#x0a;&#x0a;This is not a network outage or a proxy problem.</value></data>
+  <data name="ErrorCookiesMissing" xml:space="preserve"><value>Firefox or Edge was not found.&#x0a;&#x0a;YouTube treats this connection as a bot. A normal browser session is required.&#x0a;&#x0a;1. Install Firefox or Edge and open this video there as a website.&#x0a;2. Refresh the page and come back here.&#x0a;&#x0a;Current Chrome encrypts cookies so YtPump usually cannot read them. Opening the video in Chrome will not help, even if you are signed in to a Google account. This is not a network outage or a proxy problem.</value></data>
+  <data name="ErrorJsRuntime" xml:space="preserve"><value>Deno not found. Check the tools folder</value></data>
+  <data name="ErrorFfmpeg" xml:space="preserve"><value>FFmpeg is missing or failed to merge streams</value></data>
+  <data name="ErrorCancelled" xml:space="preserve"><value>Download cancelled</value></data>
+  <data name="ErrorUnknown" xml:space="preserve"><value>Error. Open the log</value></data>
+  <data name="StatusDownloadingStart" xml:space="preserve"><value>Downloading…</value></data>
+  <data name="StatusDownloading" xml:space="preserve"><value>Downloading — {0}% · {1} · ETA {2}</value></data>
+  <data name="StatusMerging" xml:space="preserve"><value>Merging video and audio…</value></data>
+  <data name="StatusDone" xml:space="preserve"><value>Done: {0}</value></data>
+  <data name="StatusDoneUnknownPath" xml:space="preserve"><value>Download finished. Could not determine the file path — open the save folder.</value></data>
+  <data name="StatusPartFiles" xml:space="preserve"><value>Cancelled. Temporary .part files may remain in the save folder.</value></data>
+  <data name="OpenFolder" xml:space="preserve"><value>Open folder</value></data>
+  <data name="ProxyType" xml:space="preserve"><value>Type</value></data>
+  <data name="ProxyHost" xml:space="preserve"><value>Host</value></data>
+  <data name="ProxyPort" xml:space="preserve"><value>Port</value></data>
+  <data name="ProxyUsername" xml:space="preserve"><value>Username</value></data>
+  <data name="ProxyPassword" xml:space="preserve"><value>Password</value></data>
+  <data name="ProxyShowPassword" xml:space="preserve"><value>Show password</value></data>
+  <data name="ProxyHidePassword" xml:space="preserve"><value>Hide password</value></data>
+  <data name="ProxyTest" xml:space="preserve"><value>Test</value></data>
+  <data name="ProxySave" xml:space="preserve"><value>Save</value></data>
+  <data name="ProxyTesting" xml:space="preserve"><value>Testing proxy…</value></data>
+  <data name="ProxyTestOk" xml:space="preserve"><value>Connected to the proxy</value></data>
+  <data name="ProxyTestTcpFailed" xml:space="preserve"><value>Could not connect to the proxy</value></data>
+  <data name="ProxyTestYtDlpFailed" xml:space="preserve"><value>Proxy TCP is up, but yt-dlp could not fetch the test video through it</value></data>
+  <data name="ProxyTestYtDlpMissing" xml:space="preserve"><value>Reached the proxy over TCP, but yt-dlp is missing from tools</value></data>
+  <data name="ProxyInvalid" xml:space="preserve"><value>Proxy is on, but the settings are invalid. Check host and port.</value></data>
+  <data name="ProxyInvalidHost" xml:space="preserve"><value>Enter a proxy host.</value></data>
+  <data name="ProxyInvalidPort" xml:space="preserve"><value>Proxy port must be between 1 and 65535.</value></data>
+  <data name="ProxyProfile" xml:space="preserve"><value>Profile</value></data>
+  <data name="ProxyName" xml:space="preserve"><value>Name</value></data>
+  <data name="ProxyActive" xml:space="preserve"><value>Active</value></data>
+  <data name="ProxyNew" xml:space="preserve"><value>+ New profile</value></data>
+  <data name="ProxyDuplicate" xml:space="preserve"><value>Duplicate</value></data>
+  <data name="ProxyDelete" xml:space="preserve"><value>Delete</value></data>
+  <data name="ProxyDeleteConfirm" xml:space="preserve"><value>Delete “{0}”?</value></data>
+  <data name="ProxyDraftTitle" xml:space="preserve"><value>New profile</value></data>
+  <data name="ProxyCancel" xml:space="preserve"><value>Cancel</value></data>
+  <data name="ProxyListFull" xml:space="preserve"><value>You can save at most 10 proxies.</value></data>
+  <data name="StatusCookies" xml:space="preserve"><value>Browser session ({0})…</value></data>
+  <data name="LogCookiesBrowser" xml:space="preserve"><value>Browser session: {0}</value></data>
+  <data name="LogCookiesFailed" xml:space="preserve"><value>Could not read cookies from {0}</value></data>
+  <data name="CloseWhileDownloading" xml:space="preserve"><value>A download is in progress. Stop it and exit?</value></data>
+</root>

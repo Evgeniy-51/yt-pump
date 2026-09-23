@@ -1,0 +1,118 @@
+<UserControl x:Class="YtPump.App.ProxyProfileFields"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:loc="clr-namespace:YtPump.App.Loc"
+             xmlns:local="clr-namespace:YtPump.App">
+    <Grid Grid.IsSharedSizeScope="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" SharedSizeGroup="ProxyLbl" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.Resources>
+            <Style x:Key="Proxy.Label" TargetType="TextBlock">
+                <Setter Property="VerticalAlignment" Value="Center" />
+                <Setter Property="Foreground" Value="{StaticResource Brush.InkMuted}" />
+                <Setter Property="Margin" Value="0,0,12,8" />
+            </Style>
+        </Grid.Resources>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Style="{StaticResource Proxy.Label}"
+                   Text="{Binding [ProxyName], Source={x:Static loc:LocalizationService.Instance}}" />
+        <TextBox Grid.Row="0" Grid.Column="1" Margin="0,0,0,8" MinWidth="0"
+                 Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" />
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Style="{StaticResource Proxy.Label}"
+                   Text="{Binding [ProxyType], Source={x:Static loc:LocalizationService.Instance}}" />
+        <ComboBox Grid.Row="1" Grid.Column="1" Margin="0,0,0,8"
+                  ItemsSource="{Binding DataContext.TypeOptions, RelativeSource={RelativeSource AncestorType=Window}}"
+                  SelectedValuePath="Id"
+                  SelectedValue="{Binding TypeId}" />
+
+        <TextBlock Grid.Row="2" Grid.Column="0" Style="{StaticResource Proxy.Label}"
+                   Text="{Binding [ProxyHost], Source={x:Static loc:LocalizationService.Instance}}" />
+        <TextBox Grid.Row="2" Grid.Column="1" Margin="0,0,0,8" MinWidth="0"
+                 Text="{Binding Host, UpdateSourceTrigger=PropertyChanged}" />
+
+        <TextBlock Grid.Row="3" Grid.Column="0" Style="{StaticResource Proxy.Label}"
+                   Text="{Binding [ProxyPort], Source={x:Static loc:LocalizationService.Instance}}" />
+        <TextBox Grid.Row="3" Grid.Column="1" Margin="0,0,0,8" MinWidth="0"
+                 Text="{Binding PortText, UpdateSourceTrigger=PropertyChanged}" />
+
+        <TextBlock Grid.Row="4" Grid.Column="0" Style="{StaticResource Proxy.Label}"
+                   Text="{Binding [ProxyUsername], Source={x:Static loc:LocalizationService.Instance}}" />
+        <TextBox Grid.Row="4" Grid.Column="1" Margin="0,0,0,8" MinWidth="0"
+                 Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}" />
+
+        <TextBlock Grid.Row="5" Grid.Column="0" Style="{StaticResource Proxy.Label}"
+                   Text="{Binding [ProxyPassword], Source={x:Static loc:LocalizationService.Instance}}" />
+        <Grid Grid.Row="5" Grid.Column="1" Margin="0,0,0,8">
+            <PasswordBox x:Name="SecretBox"
+                         MinWidth="0"
+                         Padding="8,0,32,0"
+                         local:PasswordBoxBinder.Password="{Binding Password, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBox x:Name="SecretText"
+                     MinWidth="0"
+                     Padding="8,0,32,0"
+                     Visibility="Collapsed"
+                     TextChanged="OnSecretTextChanged" />
+            <ToggleButton Width="28"
+                          Height="28"
+                          Margin="0,0,2,0"
+                          HorizontalAlignment="Right"
+                          VerticalAlignment="Center"
+                          Panel.ZIndex="1"
+                          Focusable="False"
+                          Cursor="Hand"
+                          IsChecked="{Binding ShowPassword, Mode=TwoWay}"
+                          Checked="OnPasswordRevealChanged"
+                          Unchecked="OnPasswordRevealChanged">
+                <ToggleButton.Style>
+                    <Style TargetType="ToggleButton">
+                        <Setter Property="Foreground" Value="{StaticResource Brush.InkMuted}" />
+                        <Setter Property="ToolTip" Value="{Binding [ProxyShowPassword], Source={x:Static loc:LocalizationService.Instance}}" />
+                        <Style.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter Property="ToolTip" Value="{Binding [ProxyHidePassword], Source={x:Static loc:LocalizationService.Instance}}" />
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Foreground" Value="{StaticResource Brush.Ink}" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </ToggleButton.Style>
+                <ToggleButton.Template>
+                    <ControlTemplate TargetType="ToggleButton">
+                        <Border Background="Transparent">
+                            <Grid Width="16" Height="16">
+                                <Path Fill="{TemplateBinding Foreground}"
+                                      Stretch="Uniform"
+                                      Data="M1,8 C4,3.2 12,3.2 15,8 C12,12.8 4,12.8 1,8 Z M8,6.1 A1.9,1.9 0 1 0 8.01,6.1 Z" />
+                                <Path x:Name="Slash"
+                                      Visibility="Collapsed"
+                                      Stroke="{TemplateBinding Foreground}"
+                                      StrokeThickness="1.6"
+                                      StrokeStartLineCap="Round"
+                                      StrokeEndLineCap="Round"
+                                      Stretch="Fill"
+                                      Data="M3,13 L13,3" />
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="Slash" Property="Visibility" Value="Visible" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </ToggleButton.Template>
+            </ToggleButton>
+        </Grid>
+    </Grid>
+</UserControl>

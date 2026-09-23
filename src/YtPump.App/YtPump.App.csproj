@@ -1,0 +1,66 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <AssemblyName>YtPump</AssemblyName>
+    <RootNamespace>YtPump.App</RootNamespace>
+    <Version>0.1</Version>
+    <Product>YtPump</Product>
+    <Copyright>Copyright (c) 2026 Evgeniy-51</Copyright>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <NeutralLanguage>ru</NeutralLanguage>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Assets\ytpump.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\YtPump.Core\YtPump.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\ytpump.ico" />
+    <EmbeddedResource Include="Help\ytpump-instrukciya.md">
+      <LogicalName>YtPump.App.Help.ru.md</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help\ytpump-instructions-en.md">
+      <LogicalName>YtPump.App.Help.en.md</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\tools\README.txt"
+          Link="tools\README.txt"
+          CopyToOutputDirectory="PreserveNewest"
+          Condition="Exists('..\..\tools\README.txt')" />
+    <None Include="..\..\portable.flag"
+          Link="portable.flag"
+          CopyToOutputDirectory="PreserveNewest"
+          CopyToPublishDirectory="PreserveNewest"
+          Condition="Exists('..\..\portable.flag')" />
+    <None Include="..\..\README.md"
+          Link="README.md"
+          CopyToPublishDirectory="PreserveNewest"
+          Condition="Exists('..\..\README.md')" />
+  </ItemGroup>
+
+  <Target Name="CopySidecarTools" AfterTargets="Build">
+    <ItemGroup>
+      <SidecarTool Include="..\..\tools\*.exe" />
+      <SidecarTool Include="..\..\tools\*.dll" />
+      <SidecarTool Include="..\..\tools\LICENSE*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(SidecarTool)"
+          DestinationFolder="$(OutputPath)tools"
+          SkipUnchangedFiles="true"
+          Condition="'@(SidecarTool)' != ''" />
+  </Target>
+
+</Project>
