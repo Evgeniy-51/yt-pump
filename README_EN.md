@@ -2,7 +2,9 @@
 
 [Русский](README.md) | **English**
 
-A portable Windows GUI for [yt-dlp](https://github.com/yt-dlp/yt-dlp). Paste a link, pick quality, audio track and container, download. No installer, no Python, no FFmpeg on `PATH`.
+**Download YouTube videos in the quality you want — in a couple of clicks.** Paste a link, pick resolution, audio track and format (MKV, MP4 or audio only) — done. Portable Windows app, nothing to install.
+
+Powered by [yt-dlp](https://github.com/yt-dlp/yt-dlp) and FFmpeg, bundled in.
 
 <p align="center">
   <img src="docs/yt-pump-main.jpg" width="780" alt="YtPump main window: link, quality, audio track, output folder and the finished file">
